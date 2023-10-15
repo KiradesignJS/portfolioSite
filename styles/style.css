@@ -2,11 +2,48 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .header {
     max-width: 1032px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 110px 15px;
+}
+
+.form {
+    position: relative;
+}
+
+.form__button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+}
+
+.form__input {
+    width: 300px;
+    background: rgba(217, 217, 217, 0.20);    
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+.form__input::placeholder {
+    color: rgba(171, 171, 171, 1);
+}
+
+.form__input:focus {
+    outline: none;
 }
 
 .header__logo {
@@ -15,4 +52,15 @@ body {
     height: 50px;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.header__link {
+    color: black;
+    text-decoration: none;
 }
