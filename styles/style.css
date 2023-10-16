@@ -5,6 +5,7 @@ body {
     font-weight: 500;
 }
 
+/*Header*/
 .header {
     max-width: 1032px;
     margin: 0 auto;
@@ -63,4 +64,52 @@ body {
 .header__link {
     color: black;
     text-decoration: none;
+}
+
+/*Container*/
+.container {
+    max-width: 1032px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__text {
+    flex-basis: 490px;
+    padding-top: 100px;
+}
+
+.main__title {
+    font-size: 50px;
+    font-weight: 500;
+    padding: 20px 20px;
+}
+
+.main__desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(171, 171, 171, 1);
+    margin-bottom: 40px;
+}
+
+.main__btn {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background: rgba(245, 198, 31, 1);
+    padding: 10px 20px;
+}
+
+.main__image {
+    flex-basis: calc(100% - 490px - 116px);
+}
+
+.main__img {
+    width: 100%;
 }
