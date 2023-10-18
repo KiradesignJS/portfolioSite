@@ -105,11 +105,3 @@ body {
     background: rgba(245, 198, 31, 1);
     padding: 10px 20px;
 }
-
-.main__image {
-    flex-basis: calc(100% - 490px - 116px);
-}
-
-.main__img {
-    width: 100%;
-}
